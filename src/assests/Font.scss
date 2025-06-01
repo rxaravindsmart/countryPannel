@@ -1,0 +1,31 @@
+@mixin f-w-500 {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 500 !important;
+}
+
+@mixin f-w-600 {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600 !important;
+}
+
+@mixin bt-2-prime {
+  border: 2px solid #212529;
+}
+@mixin prime-btn {
+  background-color: #212529;
+  border-radius: 0px;
+  color: white;
+  border: 1px solid #212529;
+  height: 50px;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  &:focus-visible {
+    background-color: #212529 !important;
+    color: white !important;
+    border-color: #212529 !important;
+    box-shadow: none;
+    outline: none;
+  }
+}

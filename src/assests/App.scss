@@ -1,0 +1,44 @@
+// App.scss
+@import "./Font.scss";
+@import "./Auth/LoginPage.scss";
+@import "./Dashboard/Slider.scss";
+@import "./Dashboard/Dashboard.scss";
+
+.App {
+  background-color: #f1f1f1;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  .button-accounts {
+    background-color: white;
+    @include bt-2-prime;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &:focus-visible {
+      background-color: #212529 !important;
+      color: white !important;
+      border-color: #212529 !important;
+      box-shadow: none;
+      outline: none;
+      .icon {
+        color: white;
+      }
+    }
+    .icon {
+      color: black;
+    }
+  }
+}
