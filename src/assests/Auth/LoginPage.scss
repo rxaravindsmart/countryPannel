@@ -1,0 +1,163 @@
+.login-container {
+  .login-contents {
+    .title {
+      color: black;
+      @include f-w-600;
+    }
+    .black {
+      color: black;
+      @include f-w-500;
+    }
+    .blue {
+      color: blue;
+      @include f-w-500;
+      text-decoration: none;
+    }
+    .password-toggle-container {
+      position: relative;
+      .password-toggle-icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #555;
+        z-index: 2;
+      }
+    }
+
+    .form-fields {
+      width: 100%;
+      height: 50px;
+      @include bt-2-prime;
+      border-radius: 0px;
+      &::placeholder {
+        color: #212529;
+        opacity: 1;
+        @include f-w-500;
+      }
+    }
+    .form-control.is-invalid {
+      background-image: none !important;
+      padding-right: 0.75rem; /* adjust if needed */
+    }
+    .form-check input[type="checkbox"] {
+      width: 30px;
+      height: 30px;
+      @include bt-2-prime;
+      color: #212529;
+      transform: scale(1);
+      cursor: pointer;
+    }
+    .form-check-input:checked {
+      background-color: #212529;
+    }
+
+    .form-check label {
+      margin-left: 1rem;
+      margin-top: 5px;
+      vertical-align: middle;
+      font-size: 16px;
+      @include f-w-500;
+    }
+    .submit-btn {
+      width: 100%;
+      @include prime-btn;
+    }
+    .line {
+      flex-grow: 1;
+      border: none;
+      border-top: 1px solid #212529;
+      line-height: 1.2rem;
+      margin: 0;
+    }
+
+    .text {
+      white-space: nowrap;
+      margin: 0;
+      font-weight: 500;
+      color: #212529;
+      @include f-w-500;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .login-contents {
+    margin: 160px 20px;
+  }
+  .right-content {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sign-in-image {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      object-fit: cover;
+    }
+    .sign-Up-image {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      object-fit: cover;
+      transform: scaleX(-1);
+    }
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .login-contents {
+    margin: 160px 0px;
+  }
+  .right-content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sign-in-image {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      object-fit: cover;
+    }
+    .sign-Up-image {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      object-fit: cover;
+      transform: scaleX(-1);
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .login-contents {
+    margin: 150px 0px;
+  }
+  .right-content {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sign-in-image {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      object-fit: cover;
+    }
+    .sign-Up-image {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      object-fit: cover;
+      transform: scaleX(-1);
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .login-contents {
+    margin: 160px 40px;
+  }
+  .right-content {
+    display: none;
+  }
+}
