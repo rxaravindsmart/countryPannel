@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # countryPannel
 =======
+=======
+>>>>>>> 0d62f57cdbdd0a91a9ead12edaa9a4a8a88ecc4a
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -47,4 +50,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+<<<<<<< HEAD
 >>>>>>> 0d62f57 (Initial commit)
+=======
+>>>>>>> 0d62f57cdbdd0a91a9ead12edaa9a4a8a88ecc4a

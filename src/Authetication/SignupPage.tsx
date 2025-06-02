@@ -18,9 +18,15 @@ const SignUpPage = (props: any) => {
     setActiveUser: (data: any) => any;
   } = props;
   const [form, setForm] = useState({
+<<<<<<< HEAD
     userName: "",
     password: "",
     confirmPassword: "",
+=======
+    userName: "abcd@gmail.com",
+    password: "Aravind@123",
+    confirmPassword: "Aravind@123",
+>>>>>>> 0d62f57cdbdd0a91a9ead12edaa9a4a8a88ecc4a
     isValid: false,
   });
   const [errors, setErrors] = useState({
